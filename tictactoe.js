@@ -43,9 +43,13 @@ function makeMove(index) {
         return;
     }
 
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    if (currentPlayer == "X") {
+        currentPlayer  = "0";
+    } else {
+        currentPlayer = "X";
+    }
 }
 
 function restart(){
- location.reload();   
+    location.reload();   
 }
