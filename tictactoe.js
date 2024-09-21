@@ -37,12 +37,6 @@ function makeMove(index) {
 
     gameCheck();
 
-    if (board.every(cell => cell !== "" && !gameOver)) {
-        document.getElementById('status').innerText = "It's a tie!";
-        gameOver = true;
-        return;
-    }
-
     if (currentPlayer == "X") {
         currentPlayer  = "0";
     } else {
